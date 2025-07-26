@@ -1,4 +1,15 @@
+<?php
+$request= $_REQUEST['q'];
+$requests=explode('/',$request);
+$first=$requests[0];
+$data=array(
+    'name'=>'vvvv',
+    'email'=>'xxxxxx@gmail.com',
+    'password'=>'12334'
+);
+insert('users',$data)
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +49,7 @@
             <form class="w-100" action="handle.php" method="post">
                 <div class="mb-3">
                     <input type="text" class="form-control form-control-lg mb-3" name="name" placeholder="Name">
-                    <input type="email" class="form-control form-control-lg mb-3" name="email" placeholder="Email address">
+                    <input type="text" class="form-control form-control-lg mb-3" name="email" placeholder="Email address">
                     <input type="password" class="form-control form-control-lg mb-3" name="pass1" placeholder="Password">
                     <input type="password" class="form-control form-control-lg" name="pass2" placeholder="Confirm password">
                 </div>

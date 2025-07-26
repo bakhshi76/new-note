@@ -1,4 +1,5 @@
 <?php
+global $config;
 $config=[
     'db'=>[
         'host'=>'localhost',
@@ -8,4 +9,3 @@ $config=[
     ],
     'base_url'=>'http://localhost/new-note/'
 ];
-global $config;
